@@ -19,7 +19,7 @@ jobs:
       run: |
         whoami
     - name: Check if I can use veth
-      run: ip link add type veth
+      run: sudo ip link add type veth
     - name: See results
       run: ip link
     - uses: actions/checkout@v2
