@@ -15,6 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Check if root
+      run: |
+        whoami
+    - name: Check if I can use veth
+      run: ip link add type veth
+    - name: See results
+      run: ip link
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
