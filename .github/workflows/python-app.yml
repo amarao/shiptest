@@ -43,3 +43,4 @@ jobs:
         pytest tests/
     - name: Check if ansible can be used
       run: ansible-test
+      working-directory: ansible_collections/amarao/test
