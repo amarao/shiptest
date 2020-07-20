@@ -42,4 +42,4 @@ jobs:
       run: |
         pytest tests/
     - name: Check if ansible can be used
-      run: ls
+      run: ansible-test
